@@ -489,9 +489,6 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .progress-section {
-    display: flex;
-    padding-bottom: 2rem; }
   .fcourse {
     height: 25vh; }
   .team {
