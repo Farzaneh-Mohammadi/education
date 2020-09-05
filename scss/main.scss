@@ -1,0 +1,517 @@
+@import "variables";
+@import "utilities";
+@import "items";
+@import "lessons";
+
+// Logo
+.logo {
+  display: flex;
+  text-align: center;
+    justify-content: center;
+    align-items: center;
+
+  &__img {
+    width: 60px;
+    height: 50px;
+  }
+
+  &__caption {
+    color: $dark-color;
+   padding-left: .5rem;
+   font-weight: 900;
+
+   &:hover{
+     color:  $logo-color;
+   }
+
+  }
+}
+
+// Main Nav
+#main-nav {
+  position: fixed;
+  background: #fff;
+  overflow: hidden;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  a {
+    color: $dark-color;
+    text-transform: uppercase;
+    &:hover {
+      color: $color-blue;
+    }
+  }
+}
+
+
+/* Showcase */
+ .showcase {
+  background: #333 url("../img/background1.jpg") no-repeat center center/cover;
+  height: 90vh;
+  color: #fff;
+  width: 100%;
+  padding-top: 5rem;
+
+
+  &-text {
+    h1{
+      line-height: 4rem;
+    }
+   justify-content: center;
+    height: 75vh;
+   padding: 5rem 15rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+ }
+
+ 
+ .btn{
+   width: max-content;
+ }
+
+
+
+
+// About
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+// Features
+.features {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  // padding: 5rem 15rem;
+  background-color: $main-color;
+
+  &__pictures {
+    width: 50%;
+    // height: 100%;
+  }
+
+  &__testimonial {
+    height: min-content;
+    a{
+      margin-left: 10rem;
+      height: min-content;
+    }
+    h3 {
+      color: $light-color;
+      margin-left: 10rem;
+      padding-top: 3rem;
+    }
+    
+    .ptitle{
+      // display: block;
+      // text-align: center;
+      margin-left: 10rem;
+      margin-bottom: 2rem;
+      color: $light-color;
+    }
+
+    &--image {
+      width: 9rem;
+    }
+
+    &--content {
+      background-color: $light-color;
+      display: flex;
+      //  justify-content: space-between;
+      margin: auto 10rem;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+    }
+
+    &--text {
+      padding-left: 1rem;
+      h4 {
+        color: $primary-color;
+        font-weight: 700;
+      }
+      p {
+        margin-top: 1rem;
+        &:not(:last-child) {
+          margin-top: 0.3rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.course-category{
+h3{
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+}
+.categories{
+ padding-top: 2rem;
+  width: 70%;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+
+  grid-template-areas: "one one two four"
+                       "one one three five";
+
+ 
+}
+
+// -----------------items------------------
+
+
+
+.lessons{
+  &__title{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
+
+  &__cards{
+    display: flex;
+     justify-content: space-between;
+     padding-top: 3rem;
+    
+    .card-img{    
+      width: 95%;
+      // height: 20rem;
+
+      
+
+    }
+
+    .card-footer{
+      margin-top: -.5rem;
+      width: 95%;
+      display: flex;
+      
+
+      .date{
+        text-align: center;
+        background-color: $main-color;
+        color: $light-color;
+        padding: 1rem;
+      }
+      
+      .lesson-name{
+        padding: 1rem;
+
+        h4{
+          color: $color-blue;
+        }
+      }
+
+    }
+   
+  }
+
+}
+
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.card-overlay {
+  position: relative;
+
+}
+
+/* Make the image to responsive */
+.lesson-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+    display: flex;
+    flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+   height: 62%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  /* padding: 20px; */
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.book-now{
+  margin-bottom: 1rem;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.card-overlay:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.progress-bars {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 15rem;
+}
+
+.progress{
+  text-align: center;
+  padding-top: 6rem;
+}
+
+
+.circle-wrap {
+  // margin: 50px auto;
+  width: 150px;
+  height: 150px;
+  background: #e6e2e7;
+  border-radius: 50%;
+}
+
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .circle .mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: $color-blue;
+}
+
+.circle-wrap .circle50 .mask.full,
+.circle-wrap .circle50 .fill {
+  transform: rotate(90deg);
+}
+
+.circle-wrap .circle60 .mask.full,
+.circle-wrap .circle60 .fill {
+  transform: rotate(108deg);
+}
+
+.circle-wrap .circle70 .mask.full,
+.circle-wrap .circle70 .fill {
+  transform: rotate(126deg);
+}
+
+.circle-wrap .circle80 .mask.full,
+.circle-wrap .circle80 .fill {
+  transform: rotate(144deg);
+}
+
+.circle-wrap .inside-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  // z-index: 100;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
+.fcourse{
+  color: #fff;
+  background: url("../img/background1.jpg") no-repeat center center/cover;
+  // z-index: -1;
+  width: 100%;
+  height: 50vh;
+  margin-top: 6rem;
+
+  &-content{
+    position: relative;
+    top: 30%;
+    left: 20%;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+  
+}
+
+
+
+
+
+.team{
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 15rem;
+
+  &__member{
+    display: flex;
+    padding-bottom: 1rem;
+  }
+
+  &-image{
+    width: 30%;
+  }
+
+  &-text{
+    padding-left: 1rem;
+  }
+
+  &-name{
+    color: $color-blue;
+    }
+
+    p{
+      font-weight: lighter;
+    }
+
+    &-title{
+      text-align: center;
+      padding-top: 6rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  .mapcontact{
+    display: flex;
+  }
+
+
+
+
+  // .map{
+    
+  // }
+
+
+
+  .contact{
+    margin-left: 5rem;
+    line-height: 2rem;
+  }
+
+  .sub-btn{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: $color-blue;
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .inp-email{
+    
+    padding: .9rem 1rem;
+  }
+
+
+
+  .footer{
+    text-align: center;
+    background-color: $color-blue;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    color: $light-color;
+  }
+
+
+
+
+
+
+
+@import 'media';

@@ -1,0 +1,118 @@
+// General Styles
+* {
+   margin: 0;
+   padding: 0;
+ }
+ 
+ body {
+   font-family: 'Merriweather', serif;;
+   line-height: 1.6;
+   max-width: 100%;
+ }
+ 
+ a {text-decoration: none;}
+ 
+ ul {list-style: none;}
+ 
+ h1 {font-size: 4rem;}
+ h2 {font-size: 3rem;}
+ h3 {font-size: 2rem;}
+ h4 {font-size: 1.5rem;}
+
+
+
+
+.btn{
+
+    border-radius: 5px;
+    // background-color: red;
+    padding: .7rem;
+    text-decoration: none;
+
+    &-light-bglight{
+    color: $light-color;
+     background: none;
+     border: 2px solid  $light-color;
+
+     &:hover{
+        background-color: $light-color;
+        color: $dark-color;
+     }
+    }
+
+
+    &-light-bgwhite{
+      color:  $dark-color;
+       background: $light-color;
+       border: 2px solid  $light-color;
+  
+       &:hover{
+          background-color: $light-color2;
+          color: $dark-color;
+          border: 2px solid  $light-color2;
+       }
+      }
+
+
+    &-light-bgdark{
+        color: $dark-color;
+        background: none;
+        border: 2px solid  $dark-color;
+        box-shadow: 5px $dark-color;
+   
+        &:hover{
+           background-color: $main-color;
+           color: $light-color;
+        }
+       }
+
+
+    &-dark{
+        background-color: $color-blue;
+        color: $light-color;
+        box-shadow: 5px $dark-color;
+        border: 2px solid  $color-blue;
+   
+        &:hover{
+           background-color: $light-color;
+           color: $color-blue;
+           border: 2px solid  $light-color;
+        }
+    }
+}
+
+
+
+.main-bottom-line{
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   height: 5px;
+   width: 7rem;
+   background-color: $main-color;
+   display: block;
+}
+
+.center-bottom-line{
+   margin: auto;
+   height: 3px;
+   width: 7rem;
+   background-color: $main-color;
+   display: block;
+}
+
+.light-bottom-line{
+   margin: 1rem auto 2rem 10rem;
+   height: 3px;
+   width: 5rem;
+   background-color: $light-color;
+   display: block;
+}
+
+.blue-bottom-line{
+   margin-left: 0;
+   margin-bottom: 2rem;
+   height: 2px;
+   width: 5rem;
+   background-color: $color-blue;
+   display: block;
+}

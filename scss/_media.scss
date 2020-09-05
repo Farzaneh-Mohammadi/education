@@ -1,0 +1,216 @@
+//Tablets and smaller
+@media (max-width: 800px) {
+  // Main Nav
+  #main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Showcase */
+  .showcase {
+    height: 50vh;
+
+    &-text {
+      height: 37vh;
+    }
+  }
+
+  //  About
+  .about {
+    max-width: 80vw;
+    &__logo {
+      visibility: hidden;
+    }
+
+    &__title {
+      font-size: 1rem;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  // Features
+  .features {
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: $main-color;
+
+    &__pictures {
+      width: 0%;
+    }
+  }
+
+  // Categories
+  .course-category {
+    .categories {
+      padding-top: 2rem;
+      width: 70%;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  //lessons
+  .lessons {
+    &__cards {
+      padding-top: 2rem;
+      width: 80%;
+      margin: 30px 9rem;
+      display: flex;
+      flex-direction: column;
+
+      .card-footer {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+
+  /* Make the image to responsive */
+  .lesson-image {
+    width: 70%;
+  }
+
+  /* The overlay effect - lays on top of the container and over the image */
+  .overlay {
+    width: 70%;
+    height: 70%;
+  }
+
+  // progress-bars
+  .progress-bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .progress-section {
+    display: flex;
+    padding-bottom: 2rem;
+  }
+
+  .fcourse {
+    height: 25vh;
+  }
+
+  //team
+
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-weight: lighter;
+      margin-bottom: 3rem;
+    }
+  }
+
+  // mapcontact
+  .mapcontact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact {
+    margin-top: 5rem;
+    line-height: 2rem;
+  }
+
+  .map {
+    margin-left: 5rem;
+  }
+}
+
+//smartphones
+@media (max-width: 500px) {
+  #main-nav {
+    margin-left: -4rem;
+  }
+
+  /* Showcase */
+  .showcase {
+    height: 30vh;
+
+    &-text {
+      font-size: 1rem;
+      h1 {
+        line-height: 1rem;
+        font-size: 1rem;
+      }
+      height: 17vh;
+      padding: 5rem 5rem;
+    }
+  }
+
+  // About
+  .about {
+    padding: 1rem 1rem;
+  }
+
+  // Features
+  .features {
+    height: 60vh;
+
+    &__testimonial {
+      a {
+        margin-left: 2rem;
+      }
+      h3 {
+        color: $light-color;
+        margin-left: 0rem;
+        padding-top: 3rem;
+      }
+
+      .ptitle {
+        margin-left: 1rem;
+      }
+
+      &--content {
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .lessons {
+    &__cards {
+      .card-footer {
+        width: 75%;
+      }
+    }
+  }
+
+  // features
+  .fcourse {
+    height: 20vh;
+    margin-top: 3rem;
+
+    &-content {
+      font-size: 1rem;
+      top: 10%;
+      left: 10%;
+    }
+  }
+
+  //team
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 2rem;
+    p {
+      font-weight: lighter;
+      margin-bottom: 3rem;
+    }
+  }
+
+  //map
+  .map {
+    margin-left: 1rem;
+  }
+}
